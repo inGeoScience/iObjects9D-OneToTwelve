@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A73F6423-CC7E-4F1D-9120-4F6C85551DE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>One2Twelve</RootNamespace>
+    <AssemblyName>One2Twelve</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SuperMap.Analyst.AddressMatching">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Analyst.AddressMatching.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.Navigation">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Analyst.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.NetworkAnalyst">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Analyst.NetworkAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.SpatialAnalyst">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Analyst.SpatialAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.SpatialStatistics">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Analyst.SpatialStatistics.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.TerrainAnalyst">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Analyst.TerrainAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.TrafficAnalyst">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Analyst.TrafficAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Chart, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data.CloudLicense">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Data.CloudLicense.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data.Conversion, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Data.Conversion.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data.Processing">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Data.Processing.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data.TileStorage">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Data.TileStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data.Topology">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Data.Topology.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.DataEx">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.DataEx.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Layout, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Mapping, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Plot">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Plot.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Realspace.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace.NetworkAnalyst">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Realspace.NetworkAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace.SpatialAnalyst">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Realspace.SpatialAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace.ThreeDDesigner">
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.Realspace.ThreeDDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.UI.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Building\SuperMap iObjects\Bin\SuperMap.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttributeProperty.Designer.cs">
+      <DependentUpon>AttributeProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BufferAnalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BufferAnalysisForm.Designer.cs">
+      <DependentUpon>BufferAnalysisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BufferResultDataGridViewPropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BufferResultDataGridViewPropertyForm.Designer.cs">
+      <DependentUpon>BufferResultDataGridViewPropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="DatasetManage.cs" />
+    <Compile Include="DatasetNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatasetNameForm.Designer.cs">
+      <DependentUpon>DatasetNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatasetRenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatasetRenameForm.Designer.cs">
+      <DependentUpon>DatasetRenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteFieldForm.Designer.cs">
+      <DependentUpon>DeleteFieldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DobuleCheckTopo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DobuleCheckTopo.Designer.cs" />
+    <Compile Include="FieldNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FieldNameForm.Designer.cs">
+      <DependentUpon>FieldNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldRenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FieldRenameForm.Designer.cs">
+      <DependentUpon>FieldRenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldsManage.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NamesInWorkspaceManage.cs" />
+    <Compile Include="NewAndSaveUdbDataSource.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatasourceRenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatasourceRenameForm.Designer.cs">
+      <DependentUpon>DatasourceRenameForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AttributeProperty.resx">
+      <DependentUpon>AttributeProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BufferAnalysisForm.resx">
+      <DependentUpon>BufferAnalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BufferResultDataGridViewPropertyForm.resx">
+      <DependentUpon>BufferResultDataGridViewPropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatasetNameForm.resx">
+      <DependentUpon>DatasetNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatasetRenameForm.resx">
+      <DependentUpon>DatasetRenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatasourceRenameForm.resx">
+      <DependentUpon>DatasourceRenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteFieldForm.resx">
+      <DependentUpon>DeleteFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DobuleCheckTopo.resx" />
+    <EmbeddedResource Include="FieldNameForm.resx">
+      <DependentUpon>FieldNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldRenameForm.resx">
+      <DependentUpon>FieldRenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
